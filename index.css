@@ -1,0 +1,84 @@
+html,
+body,
+main,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #777;
+  color: #eeeeee;
+  font-family: sans-serif;
+  font-size: 6vw;
+  min-height: 3000px;
+}
+
+p:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+main {
+  position: fixed;
+  top: 7%;
+  left: 10%;
+  padding: 15px;
+  width: 80%;
+  background-color: #515151;
+  background-image: linear-gradient(to right, #515151 85%, rgba(0, 0, 255, 0) 100%); /* Visual check Safari */
+  box-shadow: 0 1px 5px 3px rgba(0, 0, 0, 0.8);
+  min-height: 100px;
+}
+
+.fsi {
+  display: flex;
+  justify-content: center;
+}
+
+.key {
+  margin-right: 15px;
+  text-align: center;
+}
+
+.bi {
+  display: none;
+}
+
+.green {
+  color: #00ff00;
+}
+
+.poorColor {
+  color: #b5b5b5;
+}
+
+.adsbygoogle {
+  background-color: transparent;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100px;
+  height: 100px;
+}
+
+@media (min-width: 992px) {
+  body {
+    font-size: 20px;
+  }
+  main {
+    max-width: 800px;
+    width: auto;
+    top: 120px;
+    left: calc(50vw - 800px / 2);
+  }
+}
+
+@media (max-width: 991px) and (orientation: landscape) {
+  main {
+    font-size: 4.8vh;
+  }
+}
